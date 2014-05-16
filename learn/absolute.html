@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>absolute</title>
+        <style>
+        div{
+        border: solid 1px;
+        margin-bottom: 1px;
+        }
+        .div1,.div2{
+        width: 907px;
+        margin:0 auto 1px auto;
+        }
+        .div3{
+        height: 200px;
+        width: 200px;
+        /*margin:1px auto 1px auto;			*/
+        position: relative;
+        left: 10px;
+        top:10px;
+        }
+        #fileViewer {
+        height:100%;
+        width:100%;
+
+        left:0;
+        top:0;
+
+        /*position: fixed;*/
+        position: absolute;
+        background:#EEEEFF;
+        background:rgba(0,0,0,0.3);
+
+        vertical-align:middle;
+        display:table-cell;
+            }
+        #fileViewer #UC4Commiter {
+                width: 400px;
+                        margin-top: 100px;
+        }
+        #fileViewer .tv {
+        border-radius: 3px;
+        margin: auto;
+        border: 1px solid #999;
+        padding: 10px 20px 10px 20px;
+        box-shadow: 0 0 5px 5px
+        rgba(255,255,255,0.5);
+        background: #FFF;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">
+			<pre> give me a place in body.</pre>
+        </div>
+        <div id="fileViewer" style="display:none;">
+            <div id="UC4Commiter" class="tv">
+                <form id="UC4Commiter_form">
+                    <table style="margin:auto;">
+                        <tr>
+                            <th colspan="2" id="ltitle" class="title"
+                            style="text-align:center;">UC4 Paramater</th>
+                        </tr>
+                        <tr class="tr_username">
+                            <th>Uc4 Client</th>
+                            <td><input type="text" name="username" id="lclient" autocomplete="off" /></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>
+								<button type="button" id="btn_uc4deploy_submit" class="btn btn-primary">Submit</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

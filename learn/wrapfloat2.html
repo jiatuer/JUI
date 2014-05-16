@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>float</title>
+        <link href="../css/base.css" rel="stylesheet" type="text/css">	<style>
+        div{
+        /*overflow: hidden;*/
+        /*margin:0 auto;*/
+        margin-left: 50%;
+        left: -495px;
+        position: relative;
+        width: 990px;
+        border :1px solid blue;
+        }
+        img{
+        float: left;
+        }
+        /*		.tp{
+        clear:both;
+        display: block; // clear make sense on block element
+        }*/
+        .tpblock{
+        clear:both;
+        display: block;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="clearfix">
+            <span class="tp">It's fun to float</span>
+            <img src="../imgs/jump.jpg">
+        </div>
+    </body>
+</html>

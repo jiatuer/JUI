@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>float</title>
+
+	<style>
+		div{
+			margin:5px auto;
+			width: 990px;
+			border :1px solid blue;
+		}
+		img{
+			float: left;
+		}
+
+		.tp{
+			clear:both;
+			display: block; // clear make sense on block element
+		}
+		.tpblock{
+			clear:both;
+			display: block;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div>
+		<span class="tp">It's fun to float</span>
+		<img src="../imgs/jump.jpg">
+		<p class="tp">if the bottom clear ,it will come back to the bottom ,and extend the parent.
+					make sure the float element wrap by parent.
+		</p>
+	</div>
+</body>
+</html>
