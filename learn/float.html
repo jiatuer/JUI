@@ -12,26 +12,40 @@
 			float: left;
 		}
 
-		.tp{
-			clear:both;
-			display: block; // clear make sense on block element
-		}
 		.tpblock{
-			clear:both;
+			/*float can't float cover block ele above it*/
 			display: block;
 		}
+		.tp{
+			/*display: block; clear make sense on block element*/
+			display:block;
+			clear:both;
+		}
 
+		.div2{
+			width: 100%;
+			height: 20px;
+			background-color: black;
+		}
+		.div3{
+			float: left;
+			width: 100px;
+			height: 100px;
+			background-color: green;
+		}		
 	</style>
 
 </head>
 <body>
 
 	<div>
-		<span class="tp">It's fun to float</span>
+		<span class="tpblock">It's fun to float</span>
+		<div class="div2"></div>
+		<!-- <span class="tpblock">It's fun to float</span>		 -->
 		<img src="../imgs/jump.jpg">
-		<p class="tp">if the bottom clear ,it will come back to the bottom ,and extend the parent.
+		<span class="tp">if the bottom clear ,it will come back to the bottom ,and extend the parent.
 					make sure the float element wrap by parent.
-		</p>
+		</span>
 	</div>
 </body>
 </html>
