@@ -1,0 +1,81 @@
+<html lang="zh-cn">
+<head>
+	<title>margin detail</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <link href="css/base.css" rel="stylesheet" type="text/css"/>	
+    <link href="css/testbase.css" rel="stylesheet" type="text/css"/>	
+	
+	<style>
+		.dv_mg{
+			display: none;
+			float: left;
+			width: 400px;
+			height: 100px;
+			border: solid 1px;
+			padding:5px;
+			margin: 10px;
+			margin-right: -30px;
+			word-wrap: break-word;
+			word-break: normal;
+			background-color: #CCC;
+		}
+		.dv_mg2{
+			display: none;
+			float: left;
+			width: 400px;
+			border: solid 1px;
+			margin: 10px;
+			word-wrap: break-word;
+			word-break: normal;
+			background-color: #CCC;
+			margin-bottom: -60px;
+		}
+
+
+		.mg3_par{
+			position: absolute;
+			left: 200px;
+			top: 100px;
+			width: 400px;
+
+		}
+		
+		.dv_mg3{
+
+			height: 100px;
+			background-color: #CCC;
+			/*margin-right: -100px;*/
+			/*margin-left: -100px;*/
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="dv_mg">
+		<pre>通过负边距进行偏移的元素，它会放弃偏移前占据的空间，这样它后面文档流中的其它元素就会“流”过来填充这部分空间。 </pre>
+	</div>
+
+
+	<div class="dv_mg2">
+		<span>Hello world Hello world Hello world Hello world</span>
+		<span>Hello world Hello world Hello world Hello world</span>
+		<span>Hello world Hello world Hello world Hello world</span>			
+	 	<span>Hello world Hello world Hello world Hello world</span>			
+		<span>Hello world Hello world Hello world Hello world</span>
+		<span>Hello world Hello world Hello world Hello world</span>
+		<span>Hello world Hello world Hello world Hello world</span>			
+	 	<span>Hello world Hello world Hello world Hello world</span>		 		
+	</div>
+
+
+	<div class="mg3_par">
+		<div class="dv_mg3">
+			<span>
+				Lorem ipsum!
+			</span>
+		</div>
+	</div>
+</body>
+</html>
