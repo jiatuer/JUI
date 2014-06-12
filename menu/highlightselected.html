@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>jquery点击后高亮背景的菜单特效</title>
+<style>
+*{ margin:0; padding:0; list-style:none;}
+body{ font:normal 14px/24px 'MicroSoft YaHei';}
+.cotrs{ width:960px; height:32px; line-height:32px; background:#999; margin:0 auto;}
+.cotrs a{ height:32px; line-height:32px; color:#fff; text-decoration:none; padding:0px 10px; display:block; float:left;}
+.cotrs a:hover{ text-decoration:none; background:#000;}
+.cotrs a.thisclass{text-decoration:none; background:#000;}
+</style>
+</head>
+<body>
+<br><br><br>
+<div class="cotrs">
+<a href='javascript:' class="thisclass">首页</a>
+<a href='javascript:'>菜单导航</a>
+<a href='javascript:'>时间日期</a>
+<a href='javascript:'>焦点图</a>
+<a href='javascript:'>tab标签</a>
+<a href='javascript:'>jquery特效</a>
+<a href='javascript:'>在线客服</a>
+<a href='javascript:'>广告代码</a>
+<a href='javascript:'>相册代码</a>
+<a href='javascript:'>图片特效</a>
+<a href='javascript:'>名站特效</a>
+<a href='javascript:'>其他代码</a>
+<a href='javascript:'>HTML5</a>
+</div>
+<script src="http://www.codefans.net/ajaxjs/jquery-1.9.1.min.js"></script>
+<script>
+$(function(){
+var cotrs = $(".cotrs a");
+cotrs.click(function(){
+	$(this).addClass("thisclass").siblings().removeClass("thisclass");
+});
+});
+</script>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</div>
+</body>
+</html>
