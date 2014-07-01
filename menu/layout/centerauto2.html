@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>上下固定中间自适应高度布局</title>
+<style type="text/css">
+    html
+    {    
+        margin:0;
+        overflow:hidden;
+        _padding:61px 0px 61px 0;/*IE6下通过设置上下的填充来给上下固定部分腾出空间*/
+        _border:0;      
+    }    
+     body 
+    {
+        margin:0;           
+        height:100%;
+        border:0;                
+    }   
+    #content 
+    {   
+        margin:0; /*公共*/
+        width:100%;
+        position:fixed;/*FF IE7 SF*/ 
+        top:61px;
+        bottom:61px;              
+        overflow: auto !important;
+        _position: relative;/**IE6***/        
+        _top:0px;        
+        _OVERFLOW-Y: auto; 
+        _OVERFLOW-X: auto; 
+        SCROLLBAR-FACE-COLOR: #EEEEEE;/*设置IE下滚动条颜色*/
+        SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; 
+        SCROLLBAR-SHADOW-COLOR: #919192;        
+        SCROLLBAR-3DLIGHT-COLOR:#ffffff;
+        SCROLLBAR-ARROW-COLOR: #919192; 
+        SCROLLBAR-TRACK-COLOR: #ffffff; 
+        SCROLLBAR-DARKSHADOW-COLOR: #ffffff;        
+        _height:100%;              
+    }   
+    #header {
+        position:absolute;/*公共*/
+        top:0;
+        left:0;
+        width:100%;
+        height:60px;    
+        border-bottom:solid 1px #AE85E1;    
+        background-color:#EFEFEF;       
+        overflow:auto !important;/*FF*/
+        _OVERFLOW-Y: auto;/*IE6*/ 
+        _OVERFLOW-X: auto; 
+        SCROLLBAR-FACE-COLOR: #EEEEEE;/*设置IE下滚动条颜色*/
+        SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; 
+        SCROLLBAR-SHADOW-COLOR: #919192;        
+        SCROLLBAR-3DLIGHT-COLOR:#ffffff;
+        SCROLLBAR-ARROW-COLOR: #919192; 
+        SCROLLBAR-TRACK-COLOR: #ffffff; 
+        SCROLLBAR-DARKSHADOW-COLOR: #ffffff;     
+    }
+    #footer {
+        position:absolute;/*公共*/
+        bottom:0;
+        left:0;
+        width:100%;
+        height:60px;    
+        border-top:solid 1px #AE85E1;    
+        background-color:#EFEFEF;       
+        overflow:auto !important;/*FF*/
+        _OVERFLOW-Y: auto;/*IE6*/ 
+        _OVERFLOW-X: auto; 
+        SCROLLBAR-FACE-COLOR: #EEEEEE;/*设置IE下滚动条颜色*/
+        SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; 
+        SCROLLBAR-SHADOW-COLOR: #919192;        
+        SCROLLBAR-3DLIGHT-COLOR:#ffffff;
+        SCROLLBAR-ARROW-COLOR: #919192; 
+        SCROLLBAR-TRACK-COLOR: #ffffff; 
+        SCROLLBAR-DARKSHADOW-COLOR: #ffffff;     
+    }
+</style>
+</head>
+
+<body>
+<div id="header">上部固定部分</div>
+<div id="content">
+<p>中部自适用部分</p>
+<p>设定宽度为1000px的线</p>
+<hr width="1000px" />
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>
+<p>中部自适用部分</p>　
+</div>
+<div id="footer">
+下部固定部分
+</div>
+</body>
+</html>

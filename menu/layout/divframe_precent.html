@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+<title>div仿框架布局之典型的两栏布局Version2.0（Private） - Powered by 飘零雾雨</title>
+<meta name="Description" content="摆脱frameset的束缚，以div代替，通过css实现仿框架布局" />
+<meta name="Keywords" content="div布局, div仿框架布局, 两栏布局" />
+<meta name="author" content="Doyoe(飘零雾雨), dooyoe@gmail.com" />
+<style type="text/css">
+
+        html
+        {
+            min-height: 100%;
+            height: 100%;
+        }
+        body
+        {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .header
+        {
+            height: 20%;
+            background-color: #0000ff;
+            overflow: hidden;
+        }
+        .content
+        {
+            height: 70%;
+            width: 100%;
+            overflow: auto;
+            display: inline-block;
+        }
+        .footer
+        {
+            height: 10%;
+            width: 100%;
+            background-color: #00ff00;
+            overflow: hidden;
+        }
+ </style>
+ </head>
+<body> 
+<div class="header">
+<h1>title</h1>
+</div>
+<div class="content">
+<ul>
+<li>content</li>
+<li>content</li>
+<li>content</li>
+<li>content</li>
+<li>content</li>
+<li>content</li>
+<li>content</li>
+<li>content</li>
+<li>content</li>
+<li>content</li>
+<li>content</li>
+<li>content</li>
+<li>content</li>
+<li>content</li>
+<li>content</li>
+<li>content</li>
+<li>content</li>
+<li>content</li>
+<li>content</li>
+<li>解析:
+1.一定要將html和body標籤的高度設置為100%,因為子節點的百分比高度/寬度是相對父節點而言的,只有當最根部的節點設置為100%,才能保證下面的子節點高度是100%; html { min-height: 100%; height: 100%; } body { margin: 0; padding: 0; height: 100%; }
+ 2.header,content,footer三塊的高度必須全部用百分比,否則其中一個用js獲取高度(窗口高度-其他層的高度之和),其他都用固定高度.只有這樣才能確定每一塊的高度,才能滿屏</li>
+<li>content</li>
+</ul>
+</div>
+<div class="footer">footer </div>
+</body>
+</html>
