@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>absolute</title>
+        <style>
+        div{
+        border: solid 1px;
+        margin-bottom: 1px;
+        }
+
+        .dv1{
+            height: 100px;
+        }
+
+/*        .dv2{
+            height: 100px;
+        }*/
+
+        .filter{
+            position: absolute;
+            width: 50px;
+        }
+
+        .dv3{
+            margin:0 0 0 55px;
+        }
+        .dv_float{
+            float: left;
+        }
+        .dv_absolute{
+            position: absolute;
+        }
+        .dv_relative{
+            position: relative;
+        }             
+        </style>
+    </head>
+    <body>
+        <div class="dv1">
+             default width:auto; 100%;
+        </div>
+
+        <div class="dv2">
+            <span class="filter">filter</span>
+        </div>
+        <div class="dv3">
+            dv3
+        </div>
+    </br>
+        <div class="dv_float">
+            float:left; width:auto;
+            width as the content;
+        </div>
+    </br>
+        <div class="dv_absolute">
+           position:absolute; width:auto;
+            width as the content;
+        </div>
+    </br>
+        <div class="dv_relative">
+           position:relative; width:auto;
+            width inherit;
+        </div>
+    </body>
+</html>
