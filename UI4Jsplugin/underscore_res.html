@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<title>Title Page</title>
+		<meta charset="UTF-8">
+		<meta name=description content="">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap CSS -->
+		<link href="../public/bootstrap/b3/bootstrap-3.2.0/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="../public/bootstrap/b3/bootstrap-3.2.0/docs/assets/css/docs.min.css" rel="stylesheet" media="screen">		
+		
+		<style>
+<style>
+
+/*		html , body{
+			width: 100%;
+		}*/
+		*{
+			margin:1px 2px 1px 2px;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		.box{
+			/*width:960px;*/
+			width: 100%;
+			position: absolute;
+			top: 0px;
+			border: solid 1px;
+			height: 20px;
+	        /*margin-left: -480px;*/
+	        /*left:50%;  */
+		}
+
+		</style>
+	</head>
+	<body>
+
+		<div class="container" id="container">				
+		</div>		
+
+<script id="3colrow" type="text/template"> 
+			<div class="row show-grid">
+			  <div class="col-md-4">.col-md-4</div>
+			  <div class="col-md-4">.col-md-4</div>
+			  <div class="col-md-4">.col-md-4</div>
+			</div>	
+</script>
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/underscore.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="../public/bootstrap/b3/bootstrap-3.2.0/dist/js/bootstrap.min.js"></script>
+
+<script> 
+	$("#container").html( _.template($("#3colrow").html())); 
+</script>
+
+
+	</body>
+</html>
