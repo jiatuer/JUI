@@ -1,0 +1,89 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Ribbon</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<style type="text/css">
+		#container {
+		border: 1px solid #fff;
+		padding: 50px;
+		}
+		#title {
+		background: #0185ab;
+		width: 500px;
+		height: 50px;
+		color: #fff;
+		font-size: 18px;
+		text-align: center;
+		position: relative;
+		top: -20px;
+		}
+		#title span {
+		position: relative;
+		top: 13px;
+		}
+		.ribbon {
+		background: #006685;
+		width: 100px;
+		height: 50px;
+		}
+		.ribbon-right {
+		border-color: #006685 white #006685 #006685;
+		border-style:solid;
+		border-width:25px;
+		width:0;
+		height:0;
+		position: relative;
+		}
+		.ribbon-left {
+		border-color: #006685 #006685 #006685 white;
+		border-style:solid;
+		border-width:25px;
+		width:0;
+		height:0;
+		position: relative;
+		}
+		.left {
+		float: left;
+		}
+		.right {
+		float: right;
+		}
+		.clear {
+		clear: both;
+		}
+		.ribbon-right-below {
+		position: absolute;
+		top: 88px;
+		left: 684px;
+		border-color: #fff #fff #006685 #0097c0;
+		border-style:solid;
+		border-width:0 0 21px 25px ;
+		width:0;
+		height:0;
+		}
+		.ribbon-left-below {
+		position: absolute;
+		top: 88px;
+		left: 209px;
+		border-color: #006685 #0097c0 #006685 red;
+		border-style:solid;
+		border-width:0 25px 21px 0;
+		width:0;
+		height:0;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="ribbon-left left"></div>
+			<div class="ribbon left"></div>
+			<div id="title" class="left">
+				<span>s</span>
+			</div>
+			<div class="ribbon left"></div>
+			<div class="ribbon-right left"></div>
+			<div class="clear"></div>
+		</div>
+		<div class="ribbon-right-below"></div>
+		<div class="ribbon-left-below"></div>
+		</body></html>

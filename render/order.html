@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title>box</title>
+	<meta http-equiv="pragma" content="no-cache" />
+	 <link href="..\public\bootstrap\b2\css\bootstrap.css" rel="stylesheet" type="text/css"/>
+	  <link href="order.css" rel="stylesheet" type="text/css"/>
+	<style>
+		.col{
+			border: solid 1px ;
+		}
+
+		.col2{
+			border: solid 1px ;
+		}
+
+		.col3{
+			border: solid 1px ;
+		}
+
+		.row-fluid div{
+			height: 100px;
+		}
+
+	</style>
+	<script type="text/javascript">
+
+		function print(){
+			for(var i=0;i<360000000;i++){
+				if(i%100000000==0){
+					console.log(i);
+				}
+			}
+		}
+		print();
+
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row-fluid">
+			<div class="span4 col r1c1">
+					1134
+					222
+			</div>
+			<div class="span4 col r1c2">2</div>
+			<div class="span4 col r1c3">3</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span4 col2 r2c1">
+					1134
+					222
+			</div>
+			<div class="span4 col2 r2c2">2</div>
+			<div class="span4 col2 r2c3">3</div>
+		</div>
+		<div class="row-fluid row3">
+			<div class="span4 col3 r3c1">
+					1134
+					222
+			</div>
+			<div class="span4 col3 r3c2">2</div>
+			<div class="span4 col3 r3c3">3</div>
+		</div>		
+	</div>
+
+	<script src="../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">	
+		$(document).ready(function() {
+			console.log("dom loaded");
+		});
+	</script>
+</body>
+</html>
