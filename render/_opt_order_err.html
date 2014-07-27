@@ -5,7 +5,9 @@
 	<META HTTP-EQUIV="Cache-Control" CONTENT="no-store, must-revalidate"> 
 	<META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT"> 
 	<META HTTP-EQUIV="expires" CONTENT="0">
+		<!-- put css on top -->
 	 <link href="..\public\bootstrap\b2\css\bootstrap.css" rel="stylesheet" type="text/css"/>
+	 <link href="order.css" rel="stylesheet" type="text/css"/>	
 	  
 	<style>
 		.col{
@@ -21,17 +23,8 @@
 			height: 100px;
 		}
 	</style>
-	<script type="text/javascript">
-		function _print(j){
-			for(var i=0;i<j;i++){
-				for(var k=0;k<600000000;k++){
-				}
-				console.log("--"+i+"--");
-			}
-			console.log("------------------------");
-		}
-		_print(3);
-	</script>
+
+
 </head>
 <body>
 	<div class="container">
@@ -75,6 +68,18 @@
 			console.log("dom loaded");
 		});
 	</script>
-<link href="order.css" rel="stylesheet" type="text/css"/>	
+
+	<!-- one script parse and execute ,then another script parse and execute -->
+	<script type="text/javascript">
+		function _print(j){
+			for(var i=0;i<j;i++){
+				for(var k=0;k<600000000;k++){
+				}
+				console.log("--"+i+"--");
+			}
+			console.log("------------------------");
+		}
+		_print(3);
+	</script>	
 </body>
 </html>

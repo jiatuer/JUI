@@ -5,7 +5,9 @@
 	<META HTTP-EQUIV="Cache-Control" CONTENT="no-store, must-revalidate"> 
 	<META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT"> 
 	<META HTTP-EQUIV="expires" CONTENT="0">
+		<!-- put css on top -->
 	 <link href="..\public\bootstrap\b2\css\bootstrap.css" rel="stylesheet" type="text/css"/>
+	 <link href="order.css" rel="stylesheet" type="text/css"/>	
 	  
 	<style>
 		.col{
@@ -21,17 +23,8 @@
 			height: 100px;
 		}
 	</style>
-	<script type="text/javascript">
-		function _print(j){
-			for(var i=0;i<j;i++){
-				for(var k=0;k<600000000;k++){
-				}
-				console.log("--"+i+"--");
-			}
-			console.log("------------------------");
-		}
-		_print(3);
-	</script>
+
+
 </head>
 <body>
 	<div class="container">
@@ -43,9 +36,7 @@
 			<div class="span4 col r1c2">2</div>
 			<div class="span4 col r1c3">3</div>
 		</div>
-	<script type="text/javascript">
-		_print(6);
-	</script>
+
 		<div class="row-fluid">
 			<div class="span4 col2 r2c1">
 					1134
@@ -54,9 +45,6 @@
 			<div class="span4 col2 r2c2">2</div>
 			<div class="span4 col2 r2c3">3</div>
 		</div>
-	<script type="text/javascript">
-		_print(6);
-	</script>
 		<div class="row-fluid row3">
 			<div class="span4 col3 r3c1">
 					1134
@@ -66,15 +54,34 @@
 			<div class="span4 col3 r3c3">3</div>
 		</div>		
 	</div>
-	<script type="text/javascript">
-		// _print(6);
-	</script>
+
 	<script src="../js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript">	
 		$(document).ready(function() {
 			console.log("dom loaded");
 		});
 	</script>
-<link href="order.css" rel="stylesheet" type="text/css"/>	
+
+	<!-- one script parse and execute ,then another script parse and execute -->
+	<script type="text/javascript">
+		function _print(j){
+			for(var i=0;i<j;i++){
+				for(var k=0;k<600000000;k++){
+				}
+				console.log("--"+i+"--");
+			}
+			console.log("------------------------");
+		}
+		_print(1);
+	</script>	
+	<script type="text/javascript">
+		_print(6);
+	</script>	
+	<script type="text/javascript">
+		_print(6);
+	</script>
+	<script type="text/javascript">
+		_print(6);
+	</script>	
 </body>
 </html>
