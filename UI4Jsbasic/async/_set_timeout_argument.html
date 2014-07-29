@@ -23,6 +23,8 @@
 			<div class="row btn_area">
 				<button class="btn btn-info" onclick="update()">Run</button>
 				<button class="btn btn-info" onclick="update2()">Run2</button>
+				<button class="btn btn-info" onclick="update3()">Run3</button>
+				<button class="btn btn-info" onclick="update4()">Run4</button>
 				<span class="label label-info pull-right" style="display:block;" id="output1"></span>
 				<span class="label label-info pull-right" style="display:block;" id="output2"></span>
 				<span class="label label-info pull-right" style="display:block;" id="output3"></span>
@@ -41,7 +43,7 @@
 			}
 			console.log("------------------------");
 		}
-		
+		var arr = [1,2,3,4];
 		function update() {
 		for(var i=1;i<=4;i++){
 			setTimeout(updateEle(i),1000);
@@ -49,10 +51,22 @@
 		}
 
 		function update2() {
-		for(var i=1;i<=4;i++){
-			setTimeout(function(){updateEle(i)},1000);
+		for(var i=0;i<4;i++){
+			setTimeout(updateEle(i),0);
 			}
 		}
+
+		function update3() {
+		for(var i=0;i<4;i++){
+			setTimeout(updateEle(arr[i]),0);
+			}
+		}
+
+		function update4() {
+		for(var i=0;i<4;i++){
+			setTimeout(updateEle(arr[i]),0);
+			}
+		}				
 
 		function updateEle(j){
 			document.getElementById('output'+j).innerHTML = j;
