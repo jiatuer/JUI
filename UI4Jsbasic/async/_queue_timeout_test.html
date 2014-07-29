@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<title>Title Page</title>
+		<meta charset="UTF-8">
+		<meta name=description content="">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap CSS -->
+		<link href="../../public/bootstrap/b3/bootstrap-3.2.0/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="../../public/bootstrap/b3/bootstrap-3.2.0/docs/assets/css/docs.min.css" rel="stylesheet" media="screen">
+		<style>
+			.btn_area{
+				vertical-align: middle;
+				/*display:table-cell;*/
+			}
+		</style>
+	<style>
+	</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row btn_area">
+				<button class="btn btn-info" onclick="update()">Run</button>
+				<span class="label label-info pull-right" style="display:block;" id="output1"></span>
+				<span class="label label-info pull-right" style="display:block;" id="output2"></span>
+				<span class="label label-info pull-right" style="display:block;" id="output3"></span>
+				<span class="label label-info pull-right" style="display:block;" id="output4"></span>
+
+			</div>
+
+		</div>
+     <script type="text/javascript">
+
+		function _print(j){
+			for(var i=0;i<j;i++){
+				for(var k=0;k<600000000;k++){
+				}
+				console.log("--"+i+"--");
+			}
+			console.log("------------------------");
+		}
+		
+		function update() {
+			setTimeout(update1,10);
+			setTimeout(update2,20);
+			setTimeout(update3,30);
+			setTimeout(update4,40);
+		}
+
+		function update1(){
+			document.getElementById('output1').innerHTML = 1;
+			_print(2);
+		}
+
+		function update2(){
+			document.getElementById('output2').innerHTML = 2;
+			_print(2);
+		}
+
+		function update3(){
+			document.getElementById('output3').innerHTML = 3;
+			_print(2);
+		}
+		function update4(){
+			document.getElementById('output4').innerHTML = 4;
+			_print(2);
+		}
+						
+</script>
+	</body>
+</html>
