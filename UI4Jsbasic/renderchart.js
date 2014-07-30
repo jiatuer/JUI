@@ -1,6 +1,20 @@
-~function renderProfilingChartByDateId(column_profile_cntnr,data){
-		renderDataProfilingChart(column_profile_cntnr,data);
+
+// ($(".column_profile_cntnr"),data);
+	~function func(column_profile_cntnr,data){
+		_func1(column_profile_cntnr,data);
+		_print(6);
+		console.log("outer func end");
 	}($(".column_profile_cntnr"),data);
+
+	function _func1(column_profile_cntnr,data){
+		renderProfilingChartByDateId(column_profile_cntnr,data);
+		_print(3);
+		console.log("inner func end");
+	};
+
+function renderProfilingChartByDateId(column_profile_cntnr,data){
+		renderDataProfilingChart(column_profile_cntnr,data);
+	}
 
 	function renderDataProfilingChart(column_profile_cntnr,data){
 		console.log("########################begin to render########################");
@@ -9,7 +23,6 @@
 		var $cntnr = column_profile_cntnr;
 		var length = $cntnr.find(".col_info_wrap").length;
 		var chartCntnr = $cntnr.find(".col_info_wrap");
-		console.log("cntnr num:"+length);
 
 		
 		// for(var i =0;i<length;i++){
@@ -18,22 +31,23 @@
 		// 		},0);
 		// }
 
-//		  for(var i =0;i<length;i++){
-//			   setTimeout(renderColumnUnit($(chartCntnr.get(i)),data.result[i]),0);
-//			  }		
-		
-		
-	    var i = 0;
-	    function updateLater() {
-	    	renderColumnUnit($(chartCntnr.get(i)),data.result[i++]);
-	    	console.log("#######################render chart num:"+i)
-	        if (i < length) {
-	            setTimeout(updateLater, 0);
-	        }
+		  for(var i =0;i<length;i++){
+				renderColumnUnit($(chartCntnr.get(i)),data.result[i]);
+			  }
+			console.log("end for");
+		// add to queue one by one - async
 
-	    }
+	    // var i = 0;
+	    // function updateLater() {
+	    // 	renderColumnUnit($(chartCntnr.get(i)),data.result[i++]);
+	    // 	console.log("#######################render chart num:"+i)
+	    //     if (i < length) {
+	    //         setTimeout(updateLater, 0);
+	    //     }
 
-	    updateLater();	
+	    // }
+	    // updateLater();
+
 	    console.log();
 
 			
