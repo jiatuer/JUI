@@ -1,0 +1,22 @@
+{
+  "name": "JUI",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jiatuer/JUI",
+  "authors": [
+    "jiazhong <jiazhong@ebay.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "components-bootstrap": "~3.2.0"
+  }
+}
