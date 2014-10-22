@@ -1,0 +1,3 @@
+$(function(){
+	utils.log('Ready');
+})
