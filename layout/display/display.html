@@ -1,0 +1,91 @@
+<!DOCTYPE html lang="zh-cn">
+<head>
+	<title>margin detail</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <!-- <link href="../../public/bootstrap/b3/bootstrap-3.2.0/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/> -->
+	<link href="../../css/testbase.css" rel="stylesheet" type="text/css"/>
+	<link href="../../css/common.css" rel="stylesheet" type="text/css"/>
+	<style>
+			div{
+				/*float:left;*/
+			}
+			.imgwrap{
+				vertical-align: middle;
+				text-align: center;
+				/*display: table-cell;*/
+			}
+			.imgwrap1{
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+			}
+			.imgwrap1 img{
+				/*vertical-align: middle;*/
+			}
+			.imgwrap2 img{
+				vertical-align: top;
+			}
+			.imgwrap3 img{
+				vertical-align: bottom;
+			}	
+			.imgwrap3-m img{
+				vertical-align: middle;
+			}
+			.imgwrap4{
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+			}
+			.imgwrap4 .img1{
+				vertical-align: middle;
+			}	
+			.imgwrap4 .img2{
+				vertical-align:middle;
+			}				
+			.textwrap{
+				text-align: center;
+				vertical-align: middle;
+			}
+	</style>
+
+</head>
+
+<body>
+	<h2>table-cell use in div</h2>
+	<hr/>
+	<div class="imgwrap border h200 w200">
+		<img src="../../imgs/img1.jpg"/>
+	</div>
+	<div class="imgwrap1 border h200 w200">
+		<img src="../../imgs/img1.jpg"/>
+	</div>
+
+	<hr/>
+	<h2>vertical-align used in inline ele</h2>
+	<div class="imgwrap2 border h200 w600">
+		<img class="img1" src="../../imgs/img1.jpg"/>
+
+		Hi,look at me.
+	</div>
+	<div class="imgwrap3 border h200 w600">
+		<img class="img1" src="../../imgs/img1.jpg"/>
+
+		Hi,look at me.
+	</div>
+	<div class="imgwrap3-m border h200 w600">
+		<img class="img1" src="../../imgs/img1.jpg"/>
+
+		Hi,look at me.
+	</div>
+	<hr/>	
+	<h4>多个图片与我文字垂直对齐，对img设置vertical-align:middle</h4>
+	<div class="imgwrap4 border h200 w600">
+		<img class="img1" src="../../imgs/img1.jpg"/>
+		<img class="img2" src="../../imgs/img1.jpg"/>
+		Hi,look at me.
+	</div>	
+	<div class="textwrap border h200 w200">
+		<span>Hi,nice to see</span>
+	</div>
+</body>
+</html>
