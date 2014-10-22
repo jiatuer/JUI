@@ -31,22 +31,22 @@ function renderProfilingChartByDateId(column_profile_cntnr,data){
 		// 		},0);
 		// }
 
-		  for(var i =0;i<length;i++){
-				renderColumnUnit($(chartCntnr.get(i)),data.result[i]);
-			  }
-			console.log("end for");
+		 //  for(var i =0;i<length;i++){
+			// 	renderColumnUnit($(chartCntnr.get(i)),data.result[i]);
+			//   }
+			// console.log("end for");
 		// add to queue one by one - async
 
-	    // var i = 0;
-	    // function updateLater() {
-	    // 	renderColumnUnit($(chartCntnr.get(i)),data.result[i++]);
-	    // 	console.log("#######################render chart num:"+i)
-	    //     if (i < length) {
-	    //         setTimeout(updateLater, 0);
-	    //     }
+	    var i = 0;
+	    function updateLater() {
+	    	renderColumnUnit($(chartCntnr.get(i)),data.result[i++]);
+	    	console.log("#######################render chart num:"+i)
+	        if (i < length) {
+	            setTimeout(updateLater, 0);
+	        }
 
-	    // }
-	    // updateLater();
+	    }
+	    updateLater();
 
 	    console.log();
 

@@ -1,0 +1,54 @@
+<html lang="zh-cn">
+<head>
+	<title>margin detail</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <link href="../../public/bootstrap/b3/bootstrap-3.2.0/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+	<link href="../../css/testbase.css" rel="stylesheet" type="text/css"/>
+	<link href="../../css/common.css" rel="stylesheet" type="text/css"/>
+	<style>
+		/*for absolute position,bottom ignored when using height*/
+		body{
+			padding-left: 30px;
+		}
+		.abs{
+			position: absolute;
+			top: 50px;
+			bottom: 50px;
+			margin-left: 10px;
+		}
+
+		.rlt{
+			position: relative;
+			top: 200px;
+			margin:0 auto;
+
+		}
+		.abs1{
+			position: absolute;
+			top: 350px;
+			margin-left: -250px;
+			left: 50%;
+		}		
+
+	</style>
+
+</head>
+
+<body class="border">
+	<div class="border abs w500 h100">
+		position absolute,margin:auto will make no sense.
+	</div>
+
+	<div class="border rlt w500 h100">
+		<ul>
+			<li>position relative,default height is 0,and height depends on setting,not top,bottom</li>
+			<li>body padding will be considered</li>
+		</ul>
+	</div>
+
+	<div class="border abs1 w500 h100">
+		margin:-xx;left:50%; ignore body padding.
+	</div>
+
+</body>
+</html>

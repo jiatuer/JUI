@@ -1,0 +1,45 @@
+<html lang="zh-cn">
+<head>
+	<title>margin detail</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <link href="../../public/bootstrap/b3/bootstrap-3.2.0/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+	<link href="../../css/testbase.css" rel="stylesheet" type="text/css"/>
+	<link href="../../css/common.css" rel="stylesheet" type="text/css"/>
+	<style>
+		.jheader{
+			position: fixed;
+			top 100px;
+		}
+		.jfooter{
+			position: fixed;
+			bottom:1px;
+		}
+
+		.main{
+			position: absolute;
+			top: 50px;
+			bottom: 50px;
+		}
+		.main-right{
+			position: relative;
+			left: 400px;
+			top: 50px;
+			bottom: 50px;
+		}		
+	</style>
+
+</head>
+
+<body>
+	<div class="jheader border w h50">
+	</div>
+	<div class="border w500 main">
+		position absolute auto height
+	</div>
+	<div class="border w500 main-right">
+		position relative,default height is 0,and height depends on setting,not top,bottom
+	</div>
+	<div class="jfooter border w h50">
+	</div>
+</body>
+</html>

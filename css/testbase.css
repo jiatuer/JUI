@@ -58,3 +58,7 @@ div{
 	width: 1200px;
 	height: 200px;
 }
+
+.border{
+	border:solid 1px;
+}
